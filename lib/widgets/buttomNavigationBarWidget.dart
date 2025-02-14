@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CustomBottomNavBar extends StatelessWidget {
-  const CustomBottomNavBar({Key? key}) : super(key: key);
+  const CustomBottomNavBar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,9 +12,9 @@ class CustomBottomNavBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           _buildTabItem(
-              icon: Icons.home, isSelected: true), // ثابت على أول تبويب
+              icon: Icons.home, isSelected: true), 
           _buildTabItem(icon: Icons.favorite, isSelected: false),
-          const SizedBox(width: 48), // Space for the FloatingActionButton
+          const SizedBox(width: 48), 
           _buildTabItem(icon: Icons.add, isSelected: false),
           _buildTabItem(icon: Icons.person, isSelected: false),
         ],
@@ -29,7 +29,7 @@ class CustomBottomNavBar extends StatelessWidget {
         color: isSelected ? Colors.purple : Colors.grey,
       ),
       onPressed: () {
-        // يمكنك وضع أي كود هنا لو عايز تضيف حركة أو تنقل بين الشاشات
+       
       },
     );
   }

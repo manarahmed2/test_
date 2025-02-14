@@ -97,9 +97,7 @@ class HomePage extends StatelessWidget {
                       const Text("Don't have an account?",
                           style: TextStyle(fontSize: 16)),
                       TextButton(
-                        onPressed: () {
-                          
-                        },
+                        onPressed: () {},
                         child: const Text("Sign up",
                             style:
                                 TextStyle(color: Colors.purple, fontSize: 16)),

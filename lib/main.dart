@@ -1,6 +1,5 @@
 import 'package:app_task3/Screens/homePage.dart';
 
-import 'package:app_task3/Screens/secondPage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: PolloStorePage(),
+      home: HomePage(),
     );
   }
 }

@@ -1,14 +1,19 @@
+import 'package:app_task3/widgets/CarouselSlider.dart';
 import 'package:app_task3/widgets/buttomNavigationBarWidget.dart';
 import 'package:app_task3/widgets/categoryItem.dart';
+
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class PolloStorePage extends StatelessWidget {
+  const PolloStorePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: Text(
           'Pollo',
           style: TextStyle(color: Colors.purple, fontSize: 30),
@@ -32,26 +37,7 @@ class PolloStorePage extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
-                Text(
-                  'Welcome to\nPollo Store',
-                  style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                SizedBox(height: 10),
-                Text(
-                  'Your All-in-One Vet Store',
-                  style: TextStyle(fontSize: 16, color: Colors.grey),
-                ),
-              ],
-            ),
-          ),
+          CarouselWidget(),
           Expanded(
             child: GridView.count(
               crossAxisCount: 3,
